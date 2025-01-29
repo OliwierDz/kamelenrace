@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>kamelenrace</title>
+</head>
+<body>
+
+    <div class="dune"></div>
+
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+
+    <div class="sun">
+        <div class="sun-rays"></div>
+      </div>
+
+      <div class="camel camel1">
+        <img src="images\vecteezy_camel-standing-and-walking_8919770.png" alt="Cartoon Camel">
+      </div>
+      <div class="camel camel2">
+        <img src="images\vecteezy_camel-standing-and-walking_8919770.png" alt="Cartoon Camel">
+      </div>
+      <div class="camel camel3">
+        <img src="images\vecteezy_camel-standing-and-walking_8919770.png" alt="Cartoon Camel">
+      </div>
+
+      <div class="logo">
+        <img src="images\LOGO (002).png" alt="Mijn Logo">
+      </div>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Leaderbaord</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const overlay = document.getElementById('overlay');
+            const isActive = menu.classList.contains('active');
+    
+            if (isActive) {
+                menu.classList.remove('active');
+                overlay.classList.remove('active');
+            } else {
+                menu.classList.add('active');
+                overlay.classList.add('active');
+            }
+        }
+    </script>
+    
+</body>
+</html>
